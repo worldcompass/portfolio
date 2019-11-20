@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  display: grid;
+  align-content: center;
+  line-height: 2em;
+}
+.cv {
+  color: gray;
+}
+svg {
+  background-color: #fff;
+}
+
+.projects {
+  text-align: center;
+}
