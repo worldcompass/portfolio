@@ -1,8 +1,24 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./styles.css";
-// import Cv from "../src/components/cv";
-import App from "../src/components/mainpage";
+import Cv from "./components/cv";
+import App from "./components/mainpage";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+
+const Layout = () => {
+  return (
+    <Router>
+      <Switch>
+        <Route path="/cv">
+          <Cv />
+        </Route>
+        <Route path="/">
+          <App />
+        </Route>
+      </Switch>
+    </Router>
+  );
+};
+ReactDOM.render(<Layout />, rootElement);

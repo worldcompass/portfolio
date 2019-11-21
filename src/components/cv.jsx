@@ -1,6 +1,6 @@
 import React from "react";
-import Backbutton from "../components/backbutton";
-import Downloadbutton from "../components/downloadbutton";
+import Backbutton from "./backbutton";
+import Downloadbutton from "./downloadbutton";
 
 const Cv = () => {
   return (

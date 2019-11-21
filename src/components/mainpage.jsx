@@ -5,6 +5,8 @@ import Twitter from "mdi-react/TwitterBoxIcon";
 import Gmail from "mdi-react/GmailIcon";
 import Projects from "../components/projects";
 
+import { Link } from "react-router-dom";
+
 const Mainpage = () => {
   return (
     <div className="App">
@@ -13,7 +15,9 @@ const Mainpage = () => {
         My name is <span>Dmitriy Vovk</span>. I'm starting web-developer!
       </p>
       <p>Currently, I'm bulding my portfolio and first site using ReactJS</p>
-      <p className="cv">To learn more about my experience, see my</p>
+      <p className="cv">
+        y To learn more about my experience, see my <Link to="/cv">CV</Link>
+      </p>
       <a
         href="https://github.com/worldcompass"
         target="_blank"
